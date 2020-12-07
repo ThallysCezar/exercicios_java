@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class ProgramaLeitorEndereco { 
+	public static void main(String[] args) { 
+		Scanner leitor = new Scanner(System.in); 
+		Endereco end = new Endereco(); 
+		System.out.println("Digite a rua onde você mora:"); 
+		end.rua = leitor.nextLine(); 
+		System.out.println("Digite o número da residência:"); 
+		end.numero = leitor.nextInt(); 
+		leitor.nextLine(); 
+		System.out.println("Digite o bairro:"); 
+		end.bairro = leitor.nextLine(); 
+		System.out.println("Digite a cidade:"); 
+		end.cidade = leitor.nextLine(); 
+		System.out.println("Digite o estado:"); 
+		end.estado = leitor.nextLine(); 
+		System.out.println("Digite o CEP:"); 
+		end.cep = leitor.nextLine(); 
+		System.out.println("-------- Seu endereço é -------"); 
+		System.out.println(end.rua + ", " + end.numero); 
+		System.out.println(end.bairro + ", " + end.cidade); 
+		System.out.println("CEP" + end.cep + ", " + end.estado); 
+	} 
+}
