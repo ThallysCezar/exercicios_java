@@ -1,0 +1,13 @@
+static void mostraTabuleiro(char[] tabuleiro) {
+
+       for(int cont = 0; cont < tabuleiro.length; cont++) {
+
+             System.out.print(tabuleiro[cont]);
+
+             System.out.print(“ ”);
+
+       }
+
+       System.out.println();
+
+}

@@ -1,0 +1,45 @@
+public class JogoDaForca {
+
+            public static void main(String[] args) {
+
+                   char[] palavra = sorteiaPalavra();
+
+                   char[] tabuleiro = montaTabuleiro(palavra);
+
+                   int erros = 0;
+
+
+
+                   while(erros <= 7 && !Arrays.equals(tabuleiro, palavra)) {
+
+                          mostraTabuleiro(tabuleiro);
+
+                         
+
+                         System.out.print(“Informe uma letra: ”);
+
+                         char letra = System.console().readLine().charAt(0);
+
+
+
+                         if(acertou(palavra, letra))
+
+                                atualizaTabuleiro(tabuleiro, palavra, letra);
+
+                         else
+
+                                erros++;
+
+                  }
+
+                  if(erros > 7)
+
+                         System.out.println(“Você perdeu :(”);
+
+                  else
+
+                      System.out.println(“Você venceu :)”);
+
+          }
+
+     }

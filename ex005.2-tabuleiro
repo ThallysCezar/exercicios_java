@@ -1,0 +1,13 @@
+static char[] montaTabuleiro(char[] palavra) {
+
+       char[] tabuleiro = new char[palavra.length];
+
+       for(int cont = 0; cont < tabuleiro.length; cont++) {
+
+             tabuleiro[cont] = ‘_’;
+
+       }
+
+       return tabuleiro;
+
+}

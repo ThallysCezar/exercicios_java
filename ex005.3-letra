@@ -1,0 +1,13 @@
+static boolean acertou(char[] palavra, char letra) {
+
+       for(int cont = 0; cont < palavra.length; cont++) {
+
+             if(palavra[cont] == letra)
+
+                    return true;
+
+       }
+
+       return false;
+
+}
